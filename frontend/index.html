@@ -1,0 +1,45 @@
+<!-- Frontend here -->
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas Serverless</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Conversor de Divisas 💱</h1>
+
+        <form id="converter-form">
+            <label>De:</label>
+            <select id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="COP">COP</option>
+            </select>
+
+            <label>Cantidad:</label>
+            <input type="number" id="amount" placeholder="Ej: 100" required>
+
+            <label>A:</label>
+            <select id="to-currency">
+                <option value="COP">COP</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <button type="submit">Convertir</button>
+        </form>
+
+        <div class="loading" id="loading" style="display:none;">Convirtiendo...</div>
+        <div id="result"></div>
+
+        <h2>Historial</h2>
+        <ul id="history-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
