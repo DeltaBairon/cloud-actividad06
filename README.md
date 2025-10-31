@@ -2,9 +2,7 @@
 
 Express Tasks es una aplicación web que permite registrar tareas para el control de las actividades diarias de las personas de manera autónoma.
 
-# ScreenShoot
 
-![Express Tasks ](docs/Try.jpg)
 
 # Instalación
 
